@@ -14,3 +14,15 @@ CREATE TABLE Employees (
     LastName VARCHAR(50) NOT NULL
 );
 ```
+
+## 2. UNIQUE
+
+**Purpose**: Ensures that all values in a column (or a combination of columns) are unique across the table.
+**Example**:
+
+```sql
+CREATE TABLE Users (
+    UserID INT PRIMARY KEY,
+    Email VARCHAR(100) UNIQUE
+);
+```
