@@ -38,3 +38,16 @@ CREATE TABLE Products (
     ProductName VARCHAR(100)
 );
 ```
+
+## 4. FOREIGN KEY
+
+Purpose: Ensures referential integrity by linking a column in one table to a primary key in another table.
+Example:
+
+```sql
+CREATE TABLE Orders (
+    OrderID INT PRIMARY KEY,
+    CustomerID INT,
+    FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID)
+);
+```
