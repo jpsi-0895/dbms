@@ -51,3 +51,11 @@ CREATE TABLE Orders (
     FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID)
 );
 ```
+
+## 5. CHECK: Ensures that all values in a column satisfy a specific condition.
+
+```sql
+CREATE TABLE Employees (
+    Salary DECIMAL(10, 2) CHECK (Salary > 0)
+);
+```
