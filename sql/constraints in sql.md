@@ -52,10 +52,23 @@ CREATE TABLE Orders (
 );
 ```
 
-## 5. CHECK: Ensures that all values in a column satisfy a specific condition.
+## 5. CHECK: 
+
+Ensures that all values in a column satisfy a specific condition.
 
 ```sql
 CREATE TABLE Employees (
     Salary DECIMAL(10, 2) CHECK (Salary > 0)
+);
+```
+
+## 6. DEFAULT
+
+Specifies a default value for a column if no value is provided during insertion.
+
+```sql
+CREATE TABLE Products (
+    ProductID INT PRIMARY KEY,
+    Stock INT DEFAULT 0
 );
 ```
