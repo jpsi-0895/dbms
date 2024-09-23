@@ -26,3 +26,15 @@ CREATE TABLE Users (
     Email VARCHAR(100) UNIQUE
 );
 ```
+
+## 3. PRIMARY KEY
+
+**Purpose**: Combines the properties of NOT NULL and UNIQUE. It uniquely identifies each record in a table.
+**Example**:
+
+```sql
+CREATE TABLE Products (
+    ProductID INT PRIMARY KEY,
+    ProductName VARCHAR(100)
+);
+```
