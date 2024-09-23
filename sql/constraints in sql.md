@@ -52,7 +52,7 @@ CREATE TABLE Orders (
 );
 ```
 
-## 5. CHECK: 
+## 5. CHECK:
 
 Ensures that all values in a column satisfy a specific condition.
 
@@ -71,4 +71,12 @@ CREATE TABLE Products (
     ProductID INT PRIMARY KEY,
     Stock INT DEFAULT 0
 );
+```
+
+## 7. INDEX
+
+While not a `standard constraint`, indexes improve query performance. They can be created on one or more columns and can be unique or non-unique.
+
+```sql
+CREATE INDEX idx_name ON Employees(Name);
 ```
