@@ -28,3 +28,22 @@ FROM (
 1. Execute the Subquery:
 
    - The subquery (SELECT d.department_name, AVG(e.salary) AS avg_salary ... GROUP BY d.department_name) runs first. It joins the departments and employees tables, filters based on location_id, and calculates the average salary for each department located at that specific location.
+
+2. Result of the Subquery:
+
+   - Assume the subquery returns the following result set:
+
+```sql
+department_name | avg_salary
+----------------|-----------
+Sales          | 60000
+Marketing      | 55000
+```
+
+3. Outer Query Execution:
+
+   - The outer query then selects department_name and avg_salary from the result of the subquery, which is treated like a table named department_avg.
+
+4. Final Output:
+
+   - The outer query returns the final result based on the data provided by the subquery.
