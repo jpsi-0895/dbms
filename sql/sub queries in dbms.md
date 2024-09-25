@@ -11,3 +11,12 @@ They can be used in various SQL statements, such as `SELECT`, `INSERT`, `UPDATE`
 - `In WHERE`: Filter records based on conditions from another query.
 
 - `In FROM`: `Use the result of a subquery as a table`.
+
+`Example:`
+
+```sql
+INSERT INTO high_earners (employee_name, salary)
+SELECT employee_name, salary
+FROM employees
+WHERE salary > (SELECT AVG(salary) FROM employees);
+```
