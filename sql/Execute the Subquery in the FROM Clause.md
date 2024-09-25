@@ -22,3 +22,9 @@ FROM (
     GROUP BY d.department_name
 ) AS department_avg;
 ```
+
+### Step-by-Step Execution
+
+1. Execute the Subquery:
+
+   - The subquery (SELECT d.department_name, AVG(e.salary) AS avg_salary ... GROUP BY d.department_name) runs first. It joins the departments and employees tables, filters based on location_id, and calculates the average salary for each department located at that specific location.
