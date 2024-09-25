@@ -9,4 +9,16 @@ When you execute a subquery in the `FROM` clause, it essentially acts as a tempo
 2. `Outer Query`: The outer query then references this result set, allowing you to perform further operations such as `filtering`, `aggregation`, or `joining` with other tables.
 
 ### Example
-Let’s say we have two tables: employees and departments. We want to find the average salary of employees in each department but only for departments located in a specific location.
+
+Let’s say we have two tables: `employees` and `departments`. We want to find the average salary of employees in each department but only for `departments` located in a specific location.
+
+```sql
+SELECT department_name, avg_salary
+FROM (
+    SELECT d.department_name, AVG(e.salary) AS avg_salary
+    FROM departments d
+    JOIN employees e ON d.department_id = e.department_id
+    WHERE d.location_id = 1000
+    GROUP BY d.department_name
+) AS department_avg;
+```
