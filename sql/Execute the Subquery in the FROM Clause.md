@@ -47,3 +47,9 @@ Marketing      | 55000
 4. Final Output:
 
    - The outer query returns the final result based on the data provided by the subquery.
+
+## Key Points
+
+1. `Temporary Table`: The subquery acts as a temporary table that exists only for the duration of the outer query's execution.
+2. `Aliasing`: The subquery must be aliased (e.g., AS `department_avg`) to be referenced in the outer query.
+3. `Aggregation and Filtering`: You can perform aggregations, filtering, and other operations in the subquery, simplifying the outer query's logic.
