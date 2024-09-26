@@ -57,3 +57,20 @@ Managers ∪ Employees
 ```
 
 This retrieves all distinct records from both tables.
+
+## 4. Set Difference (−)
+
+Returns records in one relation that are not in another.
+
+**Syntax:**
+
+```
+Relation1 − Relation2
+```
+
+**Example:**
+
+```
+Employees − Managers
+```
+This retrieves employees who are not managers.
