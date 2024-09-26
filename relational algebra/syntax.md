@@ -73,4 +73,21 @@ Relation1 − Relation2
 ```
 Employees − Managers
 ```
+
 This retrieves employees who are not managers.
+
+## 5. Cartesian Product (×)
+
+Combines all rows from two relations, creating a new relation.
+
+**Syntax:**
+
+```
+Relation1 × Relation2
+```
+
+**Example:**
+
+```
+Employees × Departments
+```
