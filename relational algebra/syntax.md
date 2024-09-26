@@ -121,3 +121,20 @@ Combines related tuples from two relations based on a condition.
 ```
 Relation1 ⨝ condition Relation2
 ```
+
+**Example:**
+
+```
+Employees ⨝ Employees.department_id = Departments.id Departments
+```
+
+This retrieves all employee records along with their department information.
+
+## Combining Operations
+
+Relational algebra allows the combination of these operations to form complex queries. For example:
+
+```
+π(name)(σ(age > 30)(Employees)) ∪ π(name)(Managers)
+```
+This retrieves the names of employees older than 30 and all managers.
