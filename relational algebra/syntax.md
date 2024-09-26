@@ -109,4 +109,15 @@ Renames a relation or its attributes.
 ```
 ρ(Staff, Employees)
 ```
+
 This renames the Employees `relation` to `Staff`.
+
+## 7. Join (⨝)
+
+Combines related tuples from two relations based on a condition.
+
+**Syntax:**
+
+```
+Relation1 ⨝ condition Relation2
+```
