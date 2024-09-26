@@ -91,3 +91,22 @@ Relation1 × Relation2
 ```
 Employees × Departments
 ```
+
+This produces a relation with every combination of employees and departments.
+
+## 6. Rename (ρ)
+
+Renames a relation or its attributes.
+
+**Syntax:**
+
+```
+ρ(new_relation_name, Relation)
+```
+
+**Example:**
+
+```
+ρ(Staff, Employees)
+```
+This renames the Employees `relation` to `Staff`.
