@@ -37,3 +37,23 @@ Selects specific columns from a relation.
 ```
 π(name, age)(Employees)
 ```
+
+This retrieves only the names and ages of employees.
+
+## 3. Union (∪)
+
+Combines the results of two relations, removing duplicates.
+
+**Syntax:**
+
+```
+Relation1 ∪ Relation2
+```
+
+**Example:**
+
+```
+Managers ∪ Employees
+```
+
+This retrieves all distinct records from both tables.
