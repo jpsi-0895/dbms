@@ -137,4 +137,9 @@ Relational algebra allows the combination of these operations to form complex qu
 ```
 π(name)(σ(age > 30)(Employees)) ∪ π(name)(Managers)
 ```
+
 This retrieves the names of employees older than 30 and all managers.
+
+## Importance in DBMS
+
+Relational algebra serves as a theoretical foundation for SQL and is used in query optimization. Understanding relational algebra can help database designers and developers create efficient queries and understand how data is processed in a relational database.
