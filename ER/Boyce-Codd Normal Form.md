@@ -26,4 +26,4 @@ In this case we can derive that the candidate keys are `AB` and `AC`. So this re
 The properties followed by BCNF in DBMS are as-
 
 1. It should already follow the properties of 3NF
-2. For a functional dependency, A->B, A must be a super key or candidate key.
+2. For a functional dependency, `A->B`, `A` must be a super key or candidate key.
