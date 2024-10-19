@@ -125,7 +125,7 @@ Relation1 ⨝ condition Relation2
 **Example:**
 
 ```
-Employees ⨝ Employees.department_id = Departments.id Departments
+Employees (table) ⨝ `Employees.department_id = Departments.id`(condition) Departments (table)
 ```
 
 This retrieves all employee records along with their department information.
