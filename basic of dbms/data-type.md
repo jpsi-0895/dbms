@@ -24,3 +24,8 @@
 - `BINARY`(n): A fixed-length binary data type.
 - `VARBINARY`(n): A variable-length binary data type.
 - `BLOB`: Used for storing large binary objects like images or files.
+
+## JSON and XML Data Types
+
+- `JSON`: Used to store JSON (JavaScript Object Notation) formatted data.
+- `XML`: Used to store XML (eXtensible Markup Language) formatted data.
