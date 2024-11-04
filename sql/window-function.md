@@ -18,3 +18,16 @@ FROM table_name;
 2. **PARTITION BY**: This clause divides the result set into partitions to which the window function is applied. It’s similar to grouping but does not reduce the number of rows returned.
 
 3. **ORDER BY**: This clause specifies the order of rows within each partition.
+
+### Examples
+
+1. Calculating a Running Total:
+2. Ranking Rows:
+3. Finding a Moving Average:
+
+```sql
+SELECT order_date,
+       amount,
+       AVG(amount) OVER (ORDER BY order_date ROWS BETWEEN 2 PRECEDING AND CURRENT ROW) AS moving_average
+FROM orders;
+```
