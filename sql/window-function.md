@@ -23,6 +23,14 @@ FROM table_name;
 
 1. Calculating a Running Total:
 2. Ranking Rows:
+
+```sql
+SELECT employee_id,
+       salary,
+       RANK() OVER (ORDER BY salary DESC) AS salary_rank
+FROM employees;
+```
+
 3. Finding a Moving Average:
 
 ```sql
@@ -30,4 +38,14 @@ SELECT order_date,
        amount,
        AVG(amount) OVER (ORDER BY order_date ROWS BETWEEN 2 PRECEDING AND CURRENT ROW) AS moving_average
 FROM orders;
+```
+
+- The OVER() clause in SQL is essential for using window functions. It defines the window or set of rows that the function operates on.
+
+```sql
+WINDOW_FUNCTION() OVER (
+    [PARTITION BY column1, column2, ...]
+    [ORDER BY column3, column4, ...]
+    [ROWS | RANGE BETWEEN ...]
+)
 ```
